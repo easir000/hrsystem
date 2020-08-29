@@ -18,7 +18,7 @@ if(isset($_POST['submit']))
      echo  $country=$_POST['country']; 
     echo  $state=$_POST['state']; 
     echo  $city=$_POST['city']; 
-    echo  $aadharcard=$_POST['aadharcard']; 
+    echo  $nidcard=$_POST['nidcard']; 
     echo $joindate=$_POST['joindate']; 
     echo  $leavedate=$_POST['leavedate']; 
     echo  $status=$_POST['status']; 
@@ -33,7 +33,7 @@ if(isset($_POST['submit']))
     
     
    
-    $sql="INSERT INTO `employee`( `EmployeeId`, `FirstName`, `MiddleName`, `LastName`, `Birthdate`, `Gender`, `Address1`, `Address2`, `Address3`, `CityId`, `Mobile`, `Email`, `Password`, `AadharNumber`, `MaritalStatus`, `PositionId`, `JoinDate`, `LeaveDate`, `StatusId`, `RoleId`, `ImageName`, `Salary`) VALUES ('$empid',' $fname', '$mname','$lname','$bdate','$gender','$address1','$address2','$address3', '$city','$mnumber','$email','$password','$aadharcard','$marital','$position','$joindate','$leavedate','$status','$role','$pfimg','$Salary')";
+    $sql="INSERT INTO `employee`( `EmployeeId`, `FirstName`, `MiddleName`, `LastName`, `Birthdate`, `Gender`, `Address1`, `Address2`, `Address3`, `CityId`, `Mobile`, `Email`, `Password`, `NidNumber`, `MaritalStatus`, `PositionId`, `JoinDate`, `LeaveDate`, `StatusId`, `RoleId`, `ImageName`, `Salary`) VALUES ('$empid',' $fname', '$mname','$lname','$bdate','$gender','$address1','$address2','$address3', '$city','$mnumber','$email','$password','$nidcard','$marital','$position','$joindate','$leavedate','$status','$role','$pfimg','$Salary')";
     ($sql);
    header("location:employeeadd.php");
 }
