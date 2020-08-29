@@ -236,12 +236,12 @@
             </div>
 
             <div class="col-md-3 control-label">
-              <label class="control-label">Aadhar Card Number*</label>
+              <label class="control-label">Nid Number*</label>
               <div class="input-group">             
                   <span class="input-group-addon">
               <i class="fa fa-pencil" aria-hidden="true"></i>
               </span>
-              <input type="text" name="aadharcard" title="Aadhar Number" value="<?php echo(isset($editemp["AadharNumber"]))?$editemp["AadharNumber"]:""; ?>" placeholder="Aadhar Card Number" class="form-control" required="">
+              <input type="text" name="nidcard" title="Nid Number" value="<?php echo(isset($editemp["NidNumber"]))?$editemp["NidNumber"]:""; ?>" placeholder="Nid Number" class="form-control" required="">
               </div>
             </div>
               <div class="clearfix"> </div>
